@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-labelledby="title desc">
+  <title id="title">Little Orion Eldoret School Crest</title>
+  <desc id="desc">A vector crest inspired by the provided Little Orion Eldoret logo.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff2a8"/>
+      <stop offset=".44" stop-color="#f6c847"/>
+      <stop offset="1" stop-color="#b67d15"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#063f7a"/>
+      <stop offset="1" stop-color="#07182d"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#020b16" flood-opacity=".35"/>
+    </filter>
+  </defs>
+
+  <circle cx="180" cy="158" r="128" fill="#06284b" filter="url(#softShadow)"/>
+  <circle cx="180" cy="158" r="118" fill="none" stroke="url(#gold)" stroke-width="10"/>
+  <circle cx="180" cy="158" r="99" fill="#fffdf1" stroke="#06284b" stroke-width="7"/>
+  <path d="M180 72c48 0 87 39 87 86s-39 86-87 86-87-39-87-86 39-86 87-86Z" fill="#f7fbff"/>
+
+  <path d="M97 158c0-24 10-47 26-63v126a84 84 0 0 1-26-63Z" fill="#f6f1d5"/>
+  <path d="M237 95a84 84 0 0 1 26 63c0 24-10 47-26 63V95Z" fill="#f6f1d5"/>
+  <path d="M130 88h100v140H130z" fill="#ffffff" stroke="#063f7a" stroke-width="6"/>
+  <path d="M180 88v140M130 158h100" stroke="#063f7a" stroke-width="5"/>
+
+  <g fill="none" stroke="#0b784c" stroke-width="5" stroke-linecap="round">
+    <path d="M114 213c-25-35-24-82 2-116"/>
+    <path d="M107 195l-17-5M105 177l-18-1M107 158l-17 3M112 139l-16 8M121 121l-13 12"/>
+    <path d="M246 213c25-35 24-82-2-116"/>
+    <path d="M253 195l17-5M255 177l18-1M253 158l17 3M248 139l16 8M239 121l13 12"/>
+  </g>
+
+  <g fill="#063f7a">
+    <path d="M151 114c10-7 20-7 29 0v35c-9-6-19-6-29 0V114Zm29 0c10-7 20-7 29 0v35c-9-6-19-6-29 0V114Z"/>
+    <path d="M145 119c10-9 23-10 35-3v7c-10-7-22-6-35 3v-7Zm70 0c-10-9-23-10-35-3v7c10-7 22-6 35 3v-7Z" fill="#f7c83b"/>
+    <path d="M204 110l35-11 35 11-35 13-35-13Z"/>
+    <path d="M216 122h46v14c-12 9-32 9-46 0v-14Z"/>
+    <path d="M268 114v30" stroke="#063f7a" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="268" cy="148" r="5"/>
+    <path d="M165 176c9 8 9 18 0 26 12 0 19 10 12 21-5 8-19 9-25 1" fill="none" stroke="#063f7a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M164 168v58" stroke="#063f7a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M214 176h39l-13 16 13 16h-39l13-16-13-16Z"/>
+    <path d="M234 163v64" stroke="#063f7a" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <path d="M40 237c40 11 87 19 140 19s100-8 140-19l-20 45c-36 8-76 12-120 12s-84-4-120-12l-20-45Z" fill="#0b784c" stroke="#06284b" stroke-width="6"/>
+  <path d="M60 276l-32 3 21-41 36 9-25 29Zm240 0 32 3-21-41-36 9 25 29Z" fill="#0b784c" stroke="#06284b" stroke-width="6"/>
+  <path d="M72 250c32 8 69 13 108 13s76-5 108-13" fill="none" stroke="url(#gold)" stroke-width="5"/>
+
+  <text x="180" y="53" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="23" fill="#fff8ca">LITTLE ORION ELDORET</text>
+  <text x="180" y="281" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="15" fill="#fff8ca">My Education, my talent, my future</text>
+  <text x="180" y="314" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="17" fill="#06284b">EST. 2022</text>
+</svg>
