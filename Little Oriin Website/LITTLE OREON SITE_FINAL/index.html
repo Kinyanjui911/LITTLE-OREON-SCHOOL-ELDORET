@@ -54,7 +54,7 @@
               confidence, and character grow together.
             </p>
             <div class="hero-actions">
-              <a class="btn primary" href="#admissions">Start Admission</a>
+              <a class="btn primary" href="#admission-form">Start Admission</a>
               <a class="btn secondary" href="#programs">Explore Learning</a>
             </div>
           </div>
@@ -234,6 +234,62 @@
               <h3>Enroll</h3>
               <p>Complete documents, receive onboarding guidance, and join the community.</p>
             </article>
+          </div>
+          <div class="admission-form-panel" id="admission-form" data-reveal>
+            <div class="section-heading">
+              <p class="eyebrow">Admission application</p>
+              <h2>Tell us about the learner and their parent or guardian.</h2>
+              <p class="admission-notice">
+                This form is for a parent or guardian to complete. The backend currently runs locally
+                for testing; the published GitHub Pages site does not store submissions yet.
+              </p>
+            </div>
+            <form class="admission-form">
+              <div class="form-grid">
+                <label>
+                  Learner's full name
+                  <input type="text" name="learnerName" autocomplete="name" maxlength="120" required />
+                </label>
+                <label>
+                  Learner's date of birth
+                  <input type="date" name="dateOfBirth" required />
+                </label>
+                <label>
+                  Class applying for
+                  <input type="text" name="requestedClass" maxlength="80" placeholder="e.g. PP1 or Grade 1" required />
+                </label>
+                <label>
+                  Previous school <span class="optional">(optional)</span>
+                  <input type="text" name="previousSchool" maxlength="120" />
+                </label>
+              </div>
+              <h3>Parent or guardian details</h3>
+              <div class="form-grid">
+                <label>
+                  Parent or guardian's full name
+                  <input type="text" name="guardianName" autocomplete="name" maxlength="120" required />
+                </label>
+                <label>
+                  Relationship to learner
+                  <input type="text" name="guardianRelationship" maxlength="60" placeholder="e.g. Parent or guardian" required />
+                </label>
+                <label>
+                  Email address
+                  <input type="email" name="guardianEmail" autocomplete="email" maxlength="254" required />
+                </label>
+                <label>
+                  Phone number
+                  <input type="tel" name="guardianPhone" autocomplete="tel" maxlength="30" required />
+                </label>
+              </div>
+              <label class="consent-label">
+                <input type="checkbox" name="guardianConsent" value="yes" required />
+                I am the parent or legal guardian and consent to the school using these details to
+                respond to this admission enquiry.
+              </label>
+              <button class="btn primary" type="submit">Submit admission enquiry</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
           </div>
         </section>
 

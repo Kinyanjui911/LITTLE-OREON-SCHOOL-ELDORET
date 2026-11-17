@@ -27,6 +27,41 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll("[data-reveal]").forEach((element) => observer.observe(element));
 
+document.querySelector(".admission-form")?.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const button = form.querySelector('button[type="submit"]');
+  const status = form.querySelector(".form-status");
+  const formData = new FormData(form);
+  const payload = Object.fromEntries(formData.entries());
+  payload.guardianConsent = formData.get("guardianConsent") === "yes";
+
+  button.disabled = true;
+  button.textContent = "Submitting";
+  status.textContent = "";
+
+  try {
+    const response = await fetch("/api/admissions", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      throw new Error(result.error || "Unable to submit the admission enquiry.");
+    }
+
+    form.reset();
+    status.textContent = "Thank you. Your admission enquiry has been received.";
+  } catch (error) {
+    status.textContent =
+      error.message || "The admission service is unavailable. Please try again later.";
+  } finally {
+    button.disabled = false;
+    button.textContent = "Submit admission enquiry";
+  }
+});
+
 const programs = {
   academics: {
     kicker: "Foundation to future skills",

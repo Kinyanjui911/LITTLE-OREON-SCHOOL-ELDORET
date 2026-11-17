@@ -1,0 +1,4 @@
+/admissions-backend/*.sqlite3
+/admissions-backend/*.sqlite3-shm
+/admissions-backend/*.sqlite3-wal
+/admissions-backend/__pycache__/
