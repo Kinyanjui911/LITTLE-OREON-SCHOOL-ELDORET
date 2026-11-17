@@ -90,7 +90,7 @@ document.querySelector(".contact-form")?.addEventListener("submit", (event) => {
   const button = form.querySelector("button");
   const status = form.querySelector(".form-status");
   const formData = new FormData(form);
-  formData.set("source", "Little Orion Eldoret website");
+  formData.set("source", "littleOreonSchoolEldoret website");
   const original = button.textContent;
 
   button.disabled = true;

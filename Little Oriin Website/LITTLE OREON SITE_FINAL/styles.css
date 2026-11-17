@@ -99,6 +99,7 @@ textarea {
 .brand strong {
   font-size: 1rem;
   line-height: 1;
+  overflow-wrap: anywhere;
 }
 
 .brand small {
@@ -236,6 +237,7 @@ h1 {
   margin-bottom: 18px;
   font-size: clamp(3.4rem, 10vw, 8.4rem);
   line-height: 0.9;
+  overflow-wrap: anywhere;
   letter-spacing: 0;
 }
 
